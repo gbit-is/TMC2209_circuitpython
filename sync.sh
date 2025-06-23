@@ -16,7 +16,8 @@ function to_board () {
 
 	cd $SCRIPT_DIR
 	cp ./*py $PICO_DIR
-	cp -a ./tmc/ ${PICO_DIR}/lib
+	mkdir -p ${PICO_DIR}/lib/tmc
+	cp -a ./tmc/ ${PICO_DIR}/lib/tmc
 
 }
 
